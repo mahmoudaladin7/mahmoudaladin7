@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=25&duration=2600&pause=900&color=8B5CF6&center=true&vCenter=true&multiline=true&repeat=true&width=820&height=130&lines=Crafting+Digital+Experiences+%F0%9F%9A%80;Turning+Coffee+into+Code+%E2%98%95;Building+Tomorrow's+Solutions+Today+%F0%9F%92%BB" alt="Typing Animation" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=25&duration=1500&pause=900&color=8B5CF6&center=true&vCenter=true&multiline=true&repeat=true&width=820&height=130&lines=Crafting+Digital+Experiences+%F0%9F%9A%80;Turning+Coffee+into+Code+%E2%98%95;Building+Tomorrow's+Solutions+Today+%F0%9F%92%BB" alt="Typing Animation" />
 
 <br/>
 
@@ -11,6 +11,10 @@
 </a>
 <a href="mailto:mahmoudaladin7@gmail.com">
   <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+</a>
+<a href="https://mahmoudaladin.netlify.app/">
+  <img src="https://img.shields.io/badge/Portfolio-3B82F6?style=for-the-badge" alt="Portfolio" />
+
 </a>
 
 </div>
