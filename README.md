@@ -19,7 +19,7 @@
 
 ###
 
-<h2 align="center">Software Engineer | Backend Developer</h2>
+<h2 align="center">Software Engineer | Full Stack Developer</h2>
 
 ###
 
