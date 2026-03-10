@@ -150,6 +150,4 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=125&section=footer&text=Thanks%20for%20visiting!&fontSize=36&fontColor=fff&animation=twinkling&fontAlignY=72"/>
 </div>
 
-<div align="center">
-  <sub>⭐️ From <a href="https://github.com/mahmoudaladin7">mahmoudaladin7</a> with 💜</sub>
-</div>
+
