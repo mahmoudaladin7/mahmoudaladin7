@@ -379,7 +379,7 @@ ICON_META = {
     "postgres": ("PostgreSQL", "PostgreSQL"), "mysql": ("MySQL", "MySQL"), "mongodb": ("MongoDB", "MongoDB"),
     "redis": ("Redis", "Redis"), "docker": ("Docker", "Docker"), "kubernetes": ("Kubernetes", "Kubernetes"),
     "aws": ("AWS", "AWS"), "vercel": ("Vercel", "Vercel"), "linux": ("Linux", "Linux"), "git": ("Git", "Git"),
-    "github": ("Github", "GitHub"), "postman": ("Postman", "Postman"), "figma": ("Figma", "Figma"),
+    "github": ("Github", "GitHub"), "postman": ("Postman", "Postman"), "figma": ("Figma", "Figma"), "vscode": ("VSCode", "VS Code"),
 }
 
 
@@ -406,7 +406,12 @@ def toolbox(theme):
     t = theme
     W, row_h, top = 1200, 104, 112
     groups = C["toolbox"]
-    H = top + row_h * len(groups) + 18
+    per = 9
+    layout, y = [], top
+    for g in groups:
+        layout.append((g, y))
+        y += row_h * ((len(g["items"]) + per - 1) // per)
+    H = y + 18
     d = Doc(W, H, t, "Toolbox", "; ".join(
         f'{g["group"]}: {", ".join(ICON_META[i][1] for i in g["items"])}' for g in groups))
     clip = d.clip_card(24)
@@ -418,8 +423,7 @@ def toolbox(theme):
     d.add(f'<rect x="40" y="84" width="{W-80}" height="1" fill="{t["line"]}" fill-opacity="{t["line_o"]}"/>')
 
     n, size, slot, x0 = 0, 46, 96, 262
-    for gi, g in enumerate(groups):
-        y = top + gi * row_h
+    for gi, (g, y) in enumerate(layout):
         acc = t[ACCENTS[gi % 3]]
         if gi:
             d.add(f'<rect x="48" y="{y - 14}" width="{W-96}" height="1" fill="{t["line"]}" '
@@ -428,10 +432,11 @@ def toolbox(theme):
         d.add(d.text(64, y + 26, g["group"].upper(), "mono", 12.5, t["text"], ls=1.6))
         d.add(d.text(64, y + 44, f'{len(g["items"]):02d} tools', "mono", 11.5, t["faint"]))
         for k, id_ in enumerate(g["items"]):
-            cx = x0 + k * slot + slot / 2
+            cx = x0 + (k % per) * slot + slot / 2
+            iy = y + (k // per) * row_h
             # static on purpose: the toolbox must read even if animations never run
-            d.add("<g>" + inline_icon(id_, t["name"], cx - size / 2, y, size, n)
-                  + d.text(cx, y + size + 22, ICON_META[id_][1], "mono", 11.5, t["muted"], anchor="middle")
+            d.add("<g>" + inline_icon(id_, t["name"], cx - size / 2, iy, size, n)
+                  + d.text(cx, iy + size + 22, ICON_META[id_][1], "mono", 11.5, t["muted"], anchor="middle")
                   + "</g>")
             n += 1
     return d
@@ -644,7 +649,7 @@ def projects_html():
     for i, p in enumerate(C["projects"], 1):
         alt = quoteattr(f'{p["title"]} — {p["description"]} ({", ".join(p["tech"])})')
         cards.append(
-            f'  <a href="{p.get("url") or fallback}"><picture>'
+            f'  <a href="{p.get("url") or fallback}" target="_blank" rel="noopener noreferrer"><picture>'
             f'<source media="{MQ_MOBILE_DARK}" srcset="assets/project-{i}-mobile-dark.svg">'
             f'<source media="{MQ_MOBILE}" srcset="assets/project-{i}-mobile-light.svg">'
             f'<source media="{MQ_DARK}" srcset="assets/project-{i}-dark.svg">'

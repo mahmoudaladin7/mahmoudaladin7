@@ -278,7 +278,8 @@
         "git",
         "github",
         "postman",
-        "figma"
+        "figma",
+        "vscode"
       ]
     }
   ],
