@@ -1,0 +1,307 @@
+{
+  "_readme": "Edit this file, push, and the profile art rebuilds itself (see .github/workflows/profile.yml). Keep descriptions under ~120 characters so they fit the cards.",
+  "name": [
+    "Mahmoud",
+    "Aladin"
+  ],
+  "role": "Full-stack engineer · Lead web developer",
+  "tagline": "I design robust backend services, elegant APIs and bilingual web products — built for clarity, performance and long-term evolution.",
+  "highlights": [
+    {
+      "value": "67+",
+      "label": "projects shipped"
+    },
+    {
+      "value": "3",
+      "label": "companies"
+    },
+    {
+      "value": "AR/EN",
+      "label": "bilingual, RTL-ready"
+    }
+  ],
+  "terminal": [
+    {
+      "cmd": "whoami",
+      "out": [
+        [
+          [
+            "mahmoud aladin",
+            "text"
+          ],
+          [
+            " — full-stack engineer",
+            "muted"
+          ]
+        ]
+      ]
+    },
+    {
+      "cmd": "cat focus.txt",
+      "out": [
+        [
+          [
+            "clean architecture",
+            "violet"
+          ],
+          [
+            " · ",
+            "faint"
+          ],
+          [
+            "scalable apis",
+            "blue"
+          ]
+        ],
+        [
+          [
+            "polished ux",
+            "pink"
+          ],
+          [
+            " · ",
+            "faint"
+          ],
+          [
+            "arabic + english",
+            "muted"
+          ]
+        ]
+      ]
+    },
+    {
+      "cmd": "ls ~/stack",
+      "out": [
+        [
+          [
+            "nestjs  next.js  django  flutter  aws",
+            "muted"
+          ]
+        ]
+      ]
+    },
+    {
+      "cmd": "git log -1 --oneline",
+      "out": [
+        [
+          [
+            "a1f9c3e ",
+            "amber"
+          ],
+          [
+            "ship: live platforms @ wbhc",
+            "muted"
+          ]
+        ]
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "WBHC Group",
+      "category": "Investment group",
+      "status": "live",
+      "description": "Full-stack site for a Saudi investment group, with Strapi CMS, Resend email, technical SEO and analytics.",
+      "tech": [
+        "Next.js",
+        "NestJS",
+        "MySQL",
+        "Strapi"
+      ],
+      "url": "https://www.wbhc.com.sa/en"
+    },
+    {
+      "title": "Tala Al Jazeera Medical",
+      "category": "Medical supplies",
+      "status": "live",
+      "description": "Corporate website delivered end to end: CMS, integrations, hosting, technical SEO and spam protection.",
+      "tech": [
+        "Next.js",
+        "React",
+        "Strapi",
+        "Resend"
+      ],
+      "url": "https://www.talaline.sa/ar"
+    },
+    {
+      "title": "Smart Details",
+      "category": "Real estate",
+      "status": "live",
+      "description": "Site for a developer of hospitality, commercial, administrative and residential projects.",
+      "tech": [
+        "Next.js",
+        "NestJS",
+        "MySQL"
+      ],
+      "url": "https://www.smartdetails.sa/"
+    },
+    {
+      "title": "Logistics Gateway",
+      "category": "Logistics",
+      "status": "live",
+      "description": "Corporate platform for shipping, express delivery, cargo insurance and real-time tracking.",
+      "tech": [
+        "Next.js",
+        "NestJS",
+        "MySQL"
+      ],
+      "url": "https://logistic-gateway.com/"
+    },
+    {
+      "title": "Future Vision",
+      "category": "Strategic advisory",
+      "status": "live",
+      "description": "Advisory firm serving aviation, healthcare, industrial transformation, cybersecurity and supply chain.",
+      "tech": [
+        "Next.js",
+        "NestJS",
+        "MySQL"
+      ],
+      "url": "https://www.future-vision-sa.com/"
+    },
+    {
+      "title": "Bjeek",
+      "category": "Super app",
+      "status": "live",
+      "description": "Bilingual website for Bjeek, the Saudi super-app for rides, food delivery, parcels and logistics.",
+      "tech": [
+        "Next.js",
+        "next-intl",
+        "Tailwind",
+        "GSAP"
+      ],
+      "url": "https://bjeek.com"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Lead Web Developer",
+      "company": "Wealth Basis Holding Co. (WBHC)",
+      "period": "Jan 2026 – Present · Jeddah",
+      "current": true,
+      "summary": "Own technical delivery of the group's websites, from architecture to deployment, SEO, performance and security.",
+      "tech": [
+        "Next.js",
+        "NestJS",
+        "Strapi",
+        "MySQL"
+      ]
+    },
+    {
+      "role": "Full-Stack Developer",
+      "company": "Information Technology Institute (ITI)",
+      "period": "Jun 2025 – Jan 2026 · Cairo",
+      "summary": "Built full-stack web apps with React frontends and Python backends, shipped in Agile sprints.",
+      "tech": [
+        "React",
+        "Python",
+        "Django",
+        "Linux"
+      ]
+    },
+    {
+      "role": "Backend Developer",
+      "company": "Orthoplex Solutions",
+      "period": "Jan 2025 – Jun 2025 · Cairo",
+      "summary": "Secure APIs with JWT, refresh tokens and role-based access; tuned SQL; added Redis caching and rate limiting.",
+      "tech": [
+        "Node.js",
+        "NestJS",
+        "Express",
+        "SQL",
+        "Redis"
+      ]
+    }
+  ],
+  "toolbox": [
+    {
+      "group": "Languages",
+      "items": [
+        "ts",
+        "js",
+        "python",
+        "java",
+        "go",
+        "dart",
+        "kotlin"
+      ]
+    },
+    {
+      "group": "Backend",
+      "items": [
+        "nodejs",
+        "nestjs",
+        "express",
+        "django",
+        "spring",
+        "graphql"
+      ]
+    },
+    {
+      "group": "Frontend",
+      "items": [
+        "react",
+        "nextjs",
+        "redux",
+        "tailwind",
+        "sass",
+        "html",
+        "css",
+        "bootstrap"
+      ]
+    },
+    {
+      "group": "Mobile · Desktop",
+      "items": [
+        "flutter",
+        "electron",
+        "firebase"
+      ]
+    },
+    {
+      "group": "Data",
+      "items": [
+        "postgres",
+        "mysql",
+        "mongodb",
+        "redis"
+      ]
+    },
+    {
+      "group": "Cloud · Tooling",
+      "items": [
+        "docker",
+        "kubernetes",
+        "aws",
+        "vercel",
+        "linux",
+        "git",
+        "github",
+        "postman",
+        "figma"
+      ]
+    }
+  ],
+  "footer": {
+    "kicker": "// open a channel",
+    "headline": [
+      "Let's build something",
+      "that lasts."
+    ],
+    "email": "mahmoudaladin7@gmail.com"
+  },
+  "links": {
+    "portfolio": "https://mahmoudaladin.netlify.app/",
+    "linkedin": "https://www.linkedin.com/in/mahmoud-aladin-b0b903274/",
+    "email": "mailto:mahmoudaladin7@gmail.com",
+    "github_user": "mahmoudaladin7"
+  },
+  "stats": {
+    "exclude_languages": [
+      "HTML",
+      "CSS",
+      "SCSS",
+      "Jupyter Notebook"
+    ]
+  }
+}
